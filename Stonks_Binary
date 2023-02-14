@@ -1,0 +1,13 @@
+nc mercury.picoctf.net 59616
+1st option ->Buy some stonks
+List of %x to What is your API token?
+p/w in hexadecimal: 9a15430804b00080489c3f7fbfd80ffffffff19a13160f7fcd110f7fbfdc709a1418019a154109a154306f6369707b465443306c5f49345f74356d5f6c6c306d5f795f79336e3834313634356562fffb007d
+p/w in ASCII: ocip{FTC0l_I4_t5m_ll0m_y_y3n841645ebÿû
+Letters should be rearranged
+Example: ocip -> pico
+Python program
+s='ocip{FTC0l_I4_t5m_ll0m_y_y3n841645ebÿû'
+for x in range(0,len(s),4):
+    print(s[x+3]+s[x+2]+s[x+1]+s[x],end='')
+o/p: picoCTF{I_l05t_4ll_my_m0n3y_6148be54
+p/w: picoCTF{I_l05t_4ll_my_m0n3y_6148be54}
